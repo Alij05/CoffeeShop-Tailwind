@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/fav-icon.png" type="image/png">
 </head>
 
-<body class="font-Dana">
+<body class="font-Dana bg-gray-100">
     <!-- All App Icons -->
     <svg class="hidden">
         <symbol id="Shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -36,27 +36,27 @@
     </svg>
 
     <header
-        class="fixed left-0 right-0 top-5 mx-auto rounded-3xl w-[90%] h-24 py-5 pl-5 pr-10 flex items-center justify-between bg-black/50 backdrop-blur-md ">
+        class="fixed left-0 right-0 top-5 mx-auto rounded-3xl w-[90%] h-24 py-5 px-10 flex items-center justify-between bg-black/50 backdrop-blur-[6px] ">
         <!-- logo & Menu -->
-        <nav class="flex items-center gap-5">
+        <nav class="h-14 flex items-center gap-5">
             <!-- Logo -->
             <div>
                 <img src="./images/app-logo.png" alt="Golden Coffee">
             </div>
             <!-- Menu -->
-            <ul class="flex items-center gap-6 *:text-gray-300 *:relative">
-                <li>
+            <ul class="h-full flex items-center gap-6 *:text-gray-300 tracking-tightest *:relative *:leading-14">
+                <li class="font-DanaMedium">
                     <a href="#" class="text-orange-200">صفحه اصلی</a>
                 </li>
-                <li class="">
-                    <a href="#" class="text-orange-300">فروشگاه</a>
+                <li class="group">
+                    <a href="#" class="transition-colors group-hover:text-orange-300">فروشگاه</a>
                     <!-- Sub Menu -->
                     <ul
-                        class="absolute top-10 right-0 w-52 p-2 *:mt-4 divide-y-0 bg-white text-zinc-700 rounded-2xl border-t-2 border-t-orange-300">
+                        class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all right-0 w-52 p-6 space-y-4 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-2xl border-t-2 border-t-orange-300 tracking-normal *:transition-colors *:hover:text-orange-300 *:leading-normal">
                         <li>
                             <a href="">قهوه ویژه</a>
                         </li>
-                        <li class="text-orange-300">
+                        <li>
                             <a href="">ویژه در سطح جهانی</a>
                         </li>
                         <li>
@@ -88,16 +88,16 @@
             </ul>
         </nav>
         <!-- Shopping Cart & Theme Toggle & Login Link -->
-        <div class="flex items-center gap-5 text-orange-200 divide-x">
+        <div class="h-14 flex items-center gap-x-8 text-orange-200">
             <!-- Shopping Cart & Dark Mode -->
-            <div class="flex items-center gap-4">
+            <div class="h-full flex items-center gap-4">
                 <!-- Cart -->
-                <div class="relative">
+                <div class="relative cursor-pointer group">
                     <svg class="size-6">
                         <use xlink:href="#Shopping-cart"></use>
                     </svg>
                     <div
-                        class="absolute left-0 top-10 rounded-2xl bg-white w-100 border-t-2 border-t-orange-300 text-zinc-700 p-6">
+                        class="absolute left-0 top-10 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all rounded-2xl bg-white dark:bg-zinc-700 w-100 border-t-2 border-t-orange-300 text-zinc-700 dark:text-white p-6">
                         <div class="flex items-center justify-between">
                             <span class="text-gray-300 text-xs">1 مورد</span>
                             <a href="#" class="text-orange-300 text-xs">مشاهده سبد خرید</a>
@@ -123,21 +123,24 @@
                                 <p class="text-xs mt-1"><span class="font-DanaDemiBold text-xl">350,000</span> تومان</p>
                             </div>
                             <div>
-                                <button class="py-4 px-7 bg-teal-600 text-white rounded-xl cursor-pointer">ثبت سفارش</button>
+                                <button class="py-4 px-7 bg-teal-600 text-white rounded-xl cursor-pointer">ثبت
+                                    سفارش</button>
                             </div>
                         </div>
 
                     </div>
                 </div>
                 <!-- Theme Btn -->
-                <div>
+                <div class="cursor-pointer">
                     <svg class="size-6">
                         <use xlink:href="#moon"></use>
                     </svg>
                 </div>
             </div>
+            <!-- Divided Border -->
+            <span class="block w-px h-14 bg-white/20"></span>
             <!-- Login Link -->
-            <a class="flex items-center gap-2 cursor-pointer">
+            <a class="flex items-center gap-2 cursor-pointer tracking-tightest">
                 <svg class="size-6">
                     <use xlink:href="#arrow-left-on-rectangle"></use>
                 </svg>
@@ -147,6 +150,8 @@
 
     </header>
 
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>
