@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/fav-icon.png" type="image/png">
 </head>
 
-<body class="font-Dana bg-gray-100">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- All App Icons -->
     <svg class="hidden">
         <symbol id="Shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -89,38 +89,67 @@
         </nav>
         <!-- Shopping Cart & Theme Toggle & Login Link -->
         <div class="h-14 flex items-center gap-x-8 text-orange-200">
-            <!-- Shopping Cart & Dark Mode -->
+            <!-- Shopping Cart & Dark Mode Container -->
             <div class="h-full flex items-center gap-4">
                 <!-- Cart -->
                 <div class="relative cursor-pointer group">
-                    <svg class="size-6">
-                        <use xlink:href="#Shopping-cart"></use>
-                    </svg>
+                    <div class="py-4">
+                        <svg class="size-6">
+                            <use xlink:href="#Shopping-cart"></use>
+                        </svg>
+                    </div>
                     <div
-                        class="absolute left-0 top-10 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all rounded-2xl bg-white dark:bg-zinc-700 w-100 border-t-2 border-t-orange-300 text-zinc-700 dark:text-white p-6">
-                        <div class="flex items-center justify-between">
+                        class="absolute left-0 top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all rounded-2xl bg-white dark:bg-zinc-700 w-100 border-t-2 border-t-orange-300 text-zinc-700 dark:text-white px-6">
+                        <!-- Cart Header -->
+                        <div class="flex items-center justify-between pt-6">
                             <span class="text-gray-300 text-xs">1 مورد</span>
                             <a href="#" class="text-orange-300 text-xs">مشاهده سبد خرید</a>
                         </div>
-                        <!-- Product Ordered -->
-                        <div class="flex items-center gap-8 my-5 border-b-1 border-b-gray-300">
-                            <div>
-                                <img src="./images/app-logo.png" alt="">
+                        <!-- Cart Body Container -->
+                        <div>
+                            <!-- Cart Body -->
+                            <div class="border-b-2 border-gray-100 mb-4">
+                                <div class="flex items-center mt-5">
+                                    <div class="size-40">
+                                        <img src="./images/products/p2.png" alt="">
+                                    </div>
+                                    <div class="flex-col-reverse gap-5">
+                                        <p>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</p>
+                                        <div class="mt-6">
+                                            <p class="text-[12px] text-teal-600">14,500 تومان نخفیف</p>
+                                            <p class="text-xs mt-1"><span
+                                                    class="font-DanaDemiBold text-xl">175,000</span>
+                                                تومان
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex-col-reverse gap-5 mb-4">
-                                <p>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</p>
-                                <div class="mt-6">
-                                    <p class="text-[12px] text-teal-600">14,500 تومان نخفیف</p>
-                                    <p class="text-xs mt-1"><span class="font-DanaDemiBold text-xl">175,000</span> تومان
-                                    </p>
+                            <!-- Cart Body -->
+                            <div class="border-b-2 border-gray-100 mb-4">
+                                <div class="flex items-center mt-5">
+                                    <div class="size-40">
+                                        <img src="./images/products/p2.png" alt="">
+                                    </div>
+                                    <div class="flex-col-reverse gap-5">
+                                        <p>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</p>
+                                        <div class="mt-6">
+                                            <p class="text-[12px] text-teal-600">14,500 تومان نخفیف</p>
+                                            <p class="text-xs mt-1"><span
+                                                    class="font-DanaDemiBold text-xl">175,000</span>
+                                                تومان
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Order btn -->
-                        <div class="flex items-center justify-between">
+                        <!-- Cart Footer -->
+                        <div class="flex items-center justify-between mb-6">
                             <div>
                                 <span class="text-gray-300 text-xs">مبلغ قابل پرداخت</span>
-                                <p class="text-xs mt-1"><span class="font-DanaDemiBold text-xl">350,000</span> تومان</p>
+                                <p class="text-xs mt-1"><span class="font-DanaDemiBold text-xl">350,000</span> تومان
+                                </p>
                             </div>
                             <div>
                                 <button class="py-4 px-7 bg-teal-600 text-white rounded-xl cursor-pointer">ثبت
@@ -128,12 +157,16 @@
                             </div>
                         </div>
 
+
                     </div>
                 </div>
                 <!-- Theme Btn -->
-                <div class="cursor-pointer">
-                    <svg class="size-6">
+                <div class="cursor-pointer" id="toggle-theme">
+                    <svg class="size-6  inline-block dark:hidden">
                         <use xlink:href="#moon"></use>
+                    </svg>
+                    <svg class="size-6 hidden dark:inline-block">
+                        <use xlink:href="#sun"></use>
                     </svg>
                 </div>
             </div>
@@ -152,6 +185,7 @@
 
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@custom-variant dark (&:where(.dark, .dark *));
 
 
 @layer base {
@@ -41,7 +41,7 @@
 
 
     body {
-        background-image: url('../images/svgs/headerBgDesktop.png');
+        background-image: url('../images/headerBgDesktop.webp');
         background-repeat: no-repeat;
         background-size: contain;
     }
