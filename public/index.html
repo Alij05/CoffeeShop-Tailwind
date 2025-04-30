@@ -52,7 +52,7 @@
                     <a href="#" class="transition-colors group-hover:text-orange-300">فروشگاه</a>
                     <!-- Sub Menu -->
                     <ul
-                        class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all right-0 w-52 p-6 space-y-4 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white shadow-normal rounded-2xl border-t-2 border-t-orange-300 tracking-normal *:transition-colors *:hover:text-orange-300 *:leading-normal">
+                        class="absolute top-full right-0 w-52 p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible space-y-4 bg-white dark:bg-zinc-700 text-zinc-700 dark:text-white transition-all delay-75 shadow-normal rounded-2xl border-t-2 border-t-orange-300 tracking-normal *:transition-colors *:hover:text-orange-300 *:leading-normal *:w-fit">
                         <li>
                             <a href="">قهوه ویژه</a>
                         </li>
@@ -91,15 +91,15 @@
         <div class="h-14 flex items-center gap-x-8 text-orange-200">
             <!-- Shopping Cart & Dark Mode Container -->
             <div class="h-full flex items-center gap-4">
-                <!-- Cart -->
                 <div class="relative cursor-pointer group">
                     <div class="py-4">
                         <svg class="size-6">
                             <use xlink:href="#Shopping-cart"></use>
                         </svg>
                     </div>
+                    <!-- Cart -->
                     <div
-                        class="absolute left-0 top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all rounded-2xl bg-white dark:bg-zinc-700 w-100 border-t-2 border-t-orange-300 text-zinc-700 dark:text-white px-6">
+                        class="absolute left-0 top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all delay-75 rounded-2xl bg-white dark:bg-zinc-700 w-100 border-t-2 border-t-orange-300 text-zinc-700 dark:text-white px-6">
                         <!-- Cart Header -->
                         <div class="flex items-center justify-between pt-6">
                             <span class="text-gray-300 text-xs">1 مورد</span>
@@ -110,11 +110,11 @@
                             <!-- Cart Body -->
                             <div class="border-b-2 border-gray-100 mb-4">
                                 <div class="flex items-center mt-5">
-                                    <div class="size-40">
+                                    <div class="w-40 h-40 flex items-center justify-between">
                                         <img src="./images/products/p2.png" alt="">
                                     </div>
-                                    <div class="flex-col-reverse gap-5">
-                                        <p>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</p>
+                                    <div class="max-w-55 flex-col-reverse gap-5">
+                                        <p class="line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</p>
                                         <div class="mt-6">
                                             <p class="text-[12px] text-teal-600">14,500 تومان نخفیف</p>
                                             <p class="text-xs mt-1"><span
@@ -128,11 +128,12 @@
                             <!-- Cart Body -->
                             <div class="border-b-2 border-gray-100 mb-4">
                                 <div class="flex items-center mt-5">
-                                    <div class="size-40">
-                                        <img src="./images/products/p2.png" alt="">
+                                    <div class="w-40 h-40 flex items-center justify-between">
+                                        <img src="./images/products/p1.png" alt="">
                                     </div>
-                                    <div class="flex-col-reverse gap-5">
-                                        <p>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</p>
+                                    <div class="max-w-55 flex-col-reverse gap-5">
+                                        <p class="line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی قهوه اسپرسو بن
+                                            مانو مدل پریسکا 250 گرمی </p>
                                         <div class="mt-6">
                                             <p class="text-[12px] text-teal-600">14,500 تومان نخفیف</p>
                                             <p class="text-xs mt-1"><span
@@ -152,12 +153,11 @@
                                 </p>
                             </div>
                             <div>
-                                <button class="py-4 px-7 bg-teal-600 text-white rounded-xl cursor-pointer">ثبت
-                                    سفارش</button>
+                                <a href="#"
+                                    class="py-4 px-7 bg-teal-600 text-white rounded-xl cursor-pointer transition-colors hover:bg-teal-700 tracking-tighter">ثبت
+                                    سفارش</a>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
                 <!-- Theme Btn -->
